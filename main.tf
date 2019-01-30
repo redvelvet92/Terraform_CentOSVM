@@ -106,7 +106,7 @@ resource "azurerm_virtual_machine" "usnc-centos-vm" {
 #Use AZ Cli to find list of images like so
 #az vm image list --output table
     storage_image_reference {
-        publisher = "Rogue Wave Software"
+        publisher = "OpenLogic"
         offer = "CentOS"
         sku = "7.5"
         version = "latest"
