@@ -104,7 +104,7 @@ resource "azurerm_virtual_machine" "usnc-centos-vm" {
     network_interface_ids =  ["${azurerm_network_interface.usnc_centos_nic.id}"]
 
 #Use AZ Cli to find list of images like so
-#
+#az vm image list --output table
     storage_image_reference {
         publisher = "Rogue Wave Software"
         offer = "CentOS"
